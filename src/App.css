@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #fffdf8;
+  background-image:
+    linear-gradient(#b99bd8 1px, transparent 1px),
+    linear-gradient(90deg, #b99bd8 1px, transparent 1px);
+  background-size: 45px 45px;
+}
+
+.App {
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  padding-top: 30px;
+}
+
+.Header {
+  display: inline-block;
+  font-size: 2.2em;
+  font-weight: 800;
+  color: #6b3fa0;
+  background-color: #fffdf8;
+  padding: 10px 22px;
+  border: 2px solid #b99bd8;
+  border-radius: 12px;
+  box-shadow: 5px 5px 0px #d8c8f5;
+  margin-bottom: 12px;
+}
+
+.Calculator {
+  width: 440px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f3eaff;
+  border: 2px solid #6b3fa0;
+  border-radius: 15px;
+  box-shadow: 8px 10px 0px #c7b1e8;
+}
+
+.CalcDisplay {
+  border: 2px solid #6b3fa0;
+  height: 55px;
+  font-size: 2em;
+  padding: 7px;
+  text-align: right;
+  background-color: #8f76fd;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: inset 0 3px 6px rgba(45, 23, 69, 0.25);
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.CalcButtons {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.CalcButton {
+  justify-content: center;
+  border: 1px solid #6b3fa0;
+  font-size: 1.8em;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-weight: 600;
+  background-color: #b7a7ff;
+  color: #2d1745;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 0px #8f76fd;
+  cursor: pointer;
+}
+
+.CalcButton:hover {
+  background-color: #c9bcff;
+}
+
+.CalcButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0px #8f76fd;
+}
+
+.ClearButton {
+  justify-content: center;
+  border: 1px solid #6b3fa0;
+  font-size: 1.8em;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-weight: 600;
+  background-color: #ff8fab;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 0px #d85c7d;
+  cursor: pointer;
+}
+
+.ClearButton:hover {
+  background-color: #ff9fba;
+}
+
+.ClearButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0px #d85c7d;
+}
+
+.SurnameButton {
+  width: 100%;
+  margin-top: 15px;
+  border: 1px solid #6b3fa0;
+  font-size: 1.8em;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-weight: 700;
+  background-color: #8f76fd;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 0px #6b3fa0;
+  cursor: pointer;
+}
+
+.SurnameButton:hover {
+  background-color: #a18cff;
+}
+
+.SurnameButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0px #6b3fa0;
+}
